@@ -30,13 +30,15 @@
  14、"expression"：执行代码，它的简写是"p"。可以用这个命令来查看一些东西，比如："expression self"、"expression self.view.subviews"等等；
  15、"po"：oc方法中的description方法。可以用这个命令来查看一些东西，比如："po self.view.subviews"等等；
  16、"bt"：在LLDB中直接敲"bt"命令，可以显示出调用的堆栈信息；
- 17、"c"：过掉当前的断点，相当于控制台上的"Continue program execution"按钮；
- 18、"n"：单步往后面执行，相当于控制台上的"Step over"按钮；
+ 17、"c"：是"continue"的缩写，意思是过掉当前的断点，相当于控制台上的"Continue program execution"按钮；
+ 18、"n"：是"next"的缩写，意思是单步往后面执行，相当于控制台上的"Step over"按钮；
  19、"s"：继续往后面执行的时候如果遇到了函数就跳进去这个函数执行，相当于控制台上的"Step into"按钮；
  20、"ni"：与上面的"n"命令相似，只不过"n"命令是源码级别的，"ni"是汇编级别的。"ni"命令相当于当按住"control"键的时候，控制台上的"Step over"按钮；
- 21、"si"：与上面的"s"命令相似，只不过"s"命令是源码级别的，"si"是汇编级别的。"si"命令相当于当按住"control"键的时候，控制台上的"Step into"按钮；
+ 21、"si"：与上面的"s"命令相似，只不过"s"命令是源码级别的，"si"是汇编级别的。"si"命令相当于当按住"control"键的时候，控制台上的"Step into"按钮。
  
  在编辑器中，运行程序以后，在控制台上输入了LLDB命令，从而给程序中的某些方法加上了断点。但是，在编辑器中关闭程序运行以后，之前加的那些断点就消失了，再次运行就没有了。
+ 
+ LLDB官方文档："https://lldb.llvm.org/python_reference/index.htm"。
  */
 #import "ViewController.h"
 
